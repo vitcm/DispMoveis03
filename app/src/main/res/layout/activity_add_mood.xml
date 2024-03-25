@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddMoodActivity">
+
+    <!-- Título com a data do sistema -->
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:text="Data do Dia do Sistema"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Coluna de emoticons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp">
+
+        <!-- Emoticon Feliz -->
+        <ImageView
+            android:id="@+id/ic_happy"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/ic_happy"
+            android:layout_marginBottom="40dp"/>
+
+        <!-- Emoticon Neutro -->
+        <ImageView
+            android:id="@+id/ic_neutral"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/ic_neutral"
+            android:layout_marginBottom="40dp"/>
+
+        <!-- Emoticon Chorando -->
+        <ImageView
+            android:id="@+id/ic_crying"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/ic_crying"
+            android:layout_marginBottom="40dp"/>
+
+        <!-- Emoticon Bravo -->
+        <ImageView
+            android:id="@+id/ic_angry"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/ic_angry"
+            android:layout_marginBottom="40dp"/>
+
+        <!-- Emoticon Cansado -->
+        <ImageView
+            android:id="@+id/ic_tired"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/ic_tired"
+            android:layout_marginBottom="40dp"/>
+    </LinearLayout>
+
+    <!-- Botão "Adicionar humor" -->
+    <Button
+        android:id="@+id/addMoodButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adicionar Humor"
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"/>
+
+</RelativeLayout>
